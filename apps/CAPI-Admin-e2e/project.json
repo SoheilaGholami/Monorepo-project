@@ -1,0 +1,9 @@
+{
+  "name": "CAPI-Admin-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/CAPI-Admin-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["CAPI-Admin"],
+  "// targets": "to see all targets run: nx show project CAPI-Admin-e2e --web",
+  "targets": {}
+}
