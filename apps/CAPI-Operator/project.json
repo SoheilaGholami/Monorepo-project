@@ -1,0 +1,9 @@
+{
+  "name": "CAPI-Operator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/CAPI-Operator",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project CAPI-Operator --web",
+  "targets": {}
+}

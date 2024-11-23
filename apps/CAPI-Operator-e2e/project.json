@@ -1,0 +1,9 @@
+{
+  "name": "CAPI-Operator-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/CAPI-Operator-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["CAPI-Operator"],
+  "// targets": "to see all targets run: nx show project CAPI-Operator-e2e --web",
+  "targets": {}
+}

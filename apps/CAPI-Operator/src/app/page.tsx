@@ -6,7 +6,5 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.scss file.
    */
-  return <div>
-    new test
-  </div>;
+  return <div>dgdgd</div>;
 }
