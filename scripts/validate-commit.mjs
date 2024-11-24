@@ -13,7 +13,7 @@ const stagedFiles = execSync('git diff --cached --name-only', {
   .trim()
   .split('\n')
   .filter(Boolean); // Filter out empty lines
-console.log(stagedFiles);
+
 // Determine affected apps
 const affectedApps = new Set();
 stagedFiles.forEach((file) => {
@@ -28,10 +28,7 @@ stagedFiles.forEach((file) => {
   });
   if (!isApp) affectedApps.add('ROOT');
 });
-// console.log(stagedFiles.length, affectedApps.size)
-// if (stagedFiles.length > 0 && affectedApps.size === 0) {
-//   affectedApps.add('ROOT');
-// }
+
 // Validation logic
 if (affectedApps.size > 1) {
   console.error(
