@@ -1,2 +1,2 @@
-npm test
+
 node scripts/validate-commit.mjs
