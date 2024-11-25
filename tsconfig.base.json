@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@Relooq/RTC-UI": ["packages/shared/RTC-UI/src/index.ts"],
+      "@Relooq/RTC-UI/server": ["packages/shared/RTC-UI/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
