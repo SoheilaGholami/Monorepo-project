@@ -6,6 +6,7 @@ const apps = {
   "CAPI-A-e": "apps/CAPI-Admin-e2e/",
   "CAPI-O": "apps/CAPI-Operator/",
   "CAPI-O-e": "apps/CAPI-Operator-e2e/",
+  "TRC-UI":"packages/shared/RTC-UI/",
 };
 
 // Get staged files
