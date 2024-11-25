@@ -10,17 +10,19 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 declare global {
   namespace Cypress {
     interface Chainable<Subject> {
       login(email: string, password: string): void;
     }
+    /* eslint-enable @typescript-eslint/no-unused-vars */
   }
 }
 
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => {
-  console.log('Custom command example: Login', email, password);
+Cypress.Commands.add("login", (email, password) => {
+  console.log("Custom command example: Login", email, password);
 });
 //
 // -- This is a child command --
