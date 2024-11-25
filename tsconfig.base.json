@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -14,7 +16,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+     
+    
+      "@/CAPI-Admin/*": ["apps/CAPI-Admin/src/*"],
+      "@/CAPI-Operator/*": ["apps/CAPI-Operator/src/*"],
+      "@/CAPI-Admin-e2e/*": ["apps/CAPI-Admin-e2e/src/*"],
+      "@/CAPI-Operator-e2e/*": ["apps/CAPI-Operator-e2e/src/*"],
+     
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

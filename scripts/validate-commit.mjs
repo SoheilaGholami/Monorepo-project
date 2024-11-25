@@ -1,17 +1,19 @@
 // const { execSync } = require('child_process');
-import { execSync } from 'child_process';
+import { execSync } from "child_process";
 // Define app paths and mapping
 const apps = {
-  CAPI: 'apps/CAPI',
-  ReLOOQ: 'apps/ReLOOQ',
+  "CAPI-A": "apps/CAPI-Admin/",
+  "CAPI-A-e": "apps/CAPI-Admin-e2e/",
+  "CAPI-O": "apps/CAPI-Operator/",
+  "CAPI-O-e": "apps/CAPI-Operator-e2e/",
 };
 
 // Get staged files
-const stagedFiles = execSync('git diff --cached --name-only', {
-  encoding: 'utf-8',
+const stagedFiles = execSync("git diff --cached --name-only", {
+  encoding: "utf-8",
 })
   .trim()
-  .split('\n')
+  .split("\n")
   .filter(Boolean); // Filter out empty lines
 
 // Determine affected apps
@@ -26,16 +28,14 @@ stagedFiles.forEach((file) => {
     }
     return false;
   });
-  if (!isApp) affectedApps.add('ROOT');
+  if (!isApp) affectedApps.add("ROOT");
 });
 
 // Validation logic
 if (affectedApps.size > 1) {
   console.error(
-    `\x1b[31mError:\x1b[0m Your commit affects multiple apps: ${[
-      ...affectedApps,
-    ].join(', ')}.\n` +
-      'Please ensure commits are limited to one app at a time.'
+    `\x1b[31mError:\x1b[0m Your commit affects multiple apps: ${[...affectedApps].join(", ")}.\n` +
+      "Please ensure commits are limited to one app at a time.",
   );
   process.exit(1);
 }
@@ -46,9 +46,7 @@ if (affectedApps.size === 1) {
 
   // check commit pattern
 } else {
-  console.error(
-    '\x1b[31mError:\x1b[0m No app-specific changes detected. Please ensure changes are scoped to a valid app.'
-  );
+  console.error("\x1b[31mError:\x1b[0m No app-specific changes detected. Please ensure changes are scoped to a valid app.");
   process.exit(1);
 }
 

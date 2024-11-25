@@ -52,6 +52,10 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
+    },
+    "lint": {
+      "dependsOn": [],
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.js", "{projectRoot}/.eslintrc.js"]
     }
   },
   "generators": {
@@ -59,6 +63,16 @@
       "application": {
         "style": "scss",
         "linter": "eslint"
+      }
+    }
+  },
+
+
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["lint"]
       }
     }
   }
