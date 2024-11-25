@@ -1,10 +1,10 @@
 export default {
-  displayName: 'CAPI-Admin',
-  preset: '../../jest.preset.js',
+  displayName: "CAPI-Admin",
+  preset: "../../jest.preset.js",
   transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "@nx/react/plugins/jest",
+    "^.+\\.[tj]sx?$": ["babel-jest", { presets: ["@nx/next/babel"] }],
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/CAPI-Admin',
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  coverageDirectory: "../../coverage/apps/CAPI-Admin",
 };
