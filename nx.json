@@ -61,7 +61,7 @@
     },
     "lint": {
       "dependsOn": [],
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.js", "{projectRoot}/.eslintrc.js"]
+      "inputs": ["default", "{workspaceRoot}/.eslin.config.js", "{projectRoot}/.eslin.config.js"]
     }
   },
   "generators": {

@@ -39,38 +39,4 @@ module.exports = [
       "no-inline-comments": "off",
     },
   },
-  // {
-
-  //   languageOptions: {
-  //     parser, // Again, ensure parser is set correctly here
-  //   },
-  //   // rules: {
-  //   //   "@typescript-eslint/no-unused-vars": "error",
-  //   // },
-  // },
 ];
-
-// // eslint.config.js
-// module.exports = [
-//   {
-//     files: ["**/*.{js,jsx,ts,tsx}"], // Specify the files to lint
-//     languageOptions: {
-//       parser: require("@typescript-eslint/parser"), // Use the TypeScript parser correctly
-//       parserOptions: {
-//         project: "./tsconfig.base.json",
-//         tsconfigRootDir: __dirname,
-//         sourceType: "module",
-//         ecmaVersion: "latest",
-//       },
-//     },
-//     plugins: {
-//       "@typescript-eslint": require("@typescript-eslint/eslint-plugin"),
-//       prettier: require("eslint-plugin-prettier"),
-//     },
-//     rules: {
-//       "no-console": "warn",
-//       "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-//       "prettier/prettier": "error",
-//     },
-//   },
-// ];
