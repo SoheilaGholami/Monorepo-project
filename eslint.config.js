@@ -30,7 +30,12 @@ module.exports = [
       "react-hooks": reactHooks,
     },
     rules: {
-      "prettier/prettier": "error",
+      "prettier/prettier": [
+        "error",
+        {
+          endOfLine: "auto",
+        },
+      ],
       "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       "no-console": "warn",
       // "no-unused-vars": "error",

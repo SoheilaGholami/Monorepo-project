@@ -46,13 +46,13 @@ const config: UserConfig = {
     "header-match-team-pattern": [
       2, // Severity: 2 = error
       "always",
-      /^\[([a-zA-Z-]+)\] (build|ci|chore|docs|feat|fix|pref|refactor|revert|style|test)(\([a-zA-Z0-9-]+\))?: (\S.{5,})$/,
+      /^\[([a-zA-Z-]+)\] (build|ci|chore|docs|feat|fix|pref|refactor|revert|style|test)(\([a-zA-Z0-9-]+\))?: (\S.{5,})\s*$/,
     ],
     "subject-empty": [2, "never"], // Enforce non-empty subject
   },
   parserPreset: {
     parserOpts: {
-      headerPattern: /^\[([a-zA-Z-]+)\] (build|ci|chore|docs|feat|fix|pref|refactor|revert|style|test)(\([a-zA-Z0-9-]+\))?: (\S.{5,})$/,
+      headerPattern: /^\[([a-zA-Z-]+)\] (build|ci|chore|docs|feat|fix|pref|refactor|revert|style|test)(\([a-zA-Z0-9-]+\))?: (\S.{5,})\s*$/,
       headerCorrespondence: ["app", "type", "scope", "subject"], // Use 'subject' here
     },
   },
