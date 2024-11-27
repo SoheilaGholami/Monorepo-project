@@ -12,7 +12,7 @@ module.exports = [
     languageOptions: {
       parser, // Correct way to define parser in flat config
       parserOptions: {
-        project: ["./tsconfig.base.json", "packagessharedRTC-UI\tsconfig.storybook.json", "packagessharedRTC-UI\tsconfig.storybook.json"],
+        project: ["./tsconfig.base.json", "./packages/shared/RTC-UI/tsconfig.storybook.json"],
         tsconfigRootDir: __dirname,
         sourceType: "module",
         ecmaVersion: "latest",
@@ -44,4 +44,35 @@ module.exports = [
       "no-inline-comments": "off",
     },
   },
+  // {
+  //   extends: [
+  //     // Include your existing ESLint configurations here
+  //     "eslint:recommended",
+  //     "plugin:react/recommended",
+  //     "plugin:storybook/recommended", // Add Storybook plugin
+  //   ],
+  //   plugins: ["storybook"], // Ensure 'storybook' is in the plugins array
+  //   // or whatever matches stories specified in .storybook/main.js
+  //   files: ["**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+  //   languageOptions: {
+  //     parser, // Correct way to define parser in flat config
+  //     parserOptions: {
+  //       project: ["packagessharedRTC-UI\tsconfig.storybook.json", "packagessharedRTC-UI\tsconfig.storybook.json"],
+  //       tsconfigRootDir: __dirname,
+  //       sourceType: "module",
+  //       ecmaVersion: "latest",
+  //     },
+  //     globals: {
+  //       browser: true,
+  //       node: true,
+  //       es2021: true,
+  //     },
+  //   },
+  //   rules: {
+  //     // // example of overriding a rule
+  //     // "storybook/hierarchy-separator": "error",
+  //     // // example of disabling a rule
+  //     // "storybook/default-exports": "off",
+  //   },
+  // },
 ];
