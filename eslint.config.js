@@ -12,7 +12,7 @@ module.exports = [
     languageOptions: {
       parser, // Correct way to define parser in flat config
       parserOptions: {
-        project: "./tsconfig.base.json",
+        project: ["./tsconfig.base.json", "packagessharedRTC-UI\tsconfig.storybook.json", "packagessharedRTC-UI\tsconfig.storybook.json"],
         tsconfigRootDir: __dirname,
         sourceType: "module",
         ecmaVersion: "latest",
