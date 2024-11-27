@@ -43,6 +43,7 @@ const config: UserConfig = {
     },
   ],
   rules: {
+    "header-trim": [0],
     "header-match-team-pattern": [
       2, // Severity: 2 = error
       "always",
