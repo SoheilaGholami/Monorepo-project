@@ -16,14 +16,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@/CAPI-Admin-e2e/*": ["./apps/CAPI-Admin-e2e/src/*"],
-      "@/CAPI-Admin/*": ["./apps/CAPI-Admin/src/*"],
-      "@/CAPI-Operator-e2e/*": ["./apps/CAPI-Operator-e2e/src/*"],
-      "@/CAPI-Operator/*": ["./apps/CAPI-Operator/src/*"],
-      "@Relooq/RTC-UI": ["packages/shared/RTC-UI/src/index.ts"],
-      "@Relooq/RTC-UI/server": ["packages/shared/RTC-UI/src/server.ts"]
-    }
+    // "paths": {
+    //   "@/CAPI-Admin-e2e/*": ["./apps/CAPI-Admin-e2e/src/*"],
+    //   "@/CAPI-Admin/*": ["./apps/CAPI-Admin/src/*"],
+    //   "@/CAPI-Operator-e2e/*": ["./apps/CAPI-Operator-e2e/src/*"],
+    //   "@/CAPI-Operator/*": ["./apps/CAPI-Operator/src/*"],
+    //   "@Relooq/RTC-UI": ["packages/shared/RTC-UI/src/index.ts"],
+    //   "@Relooq/RTC-UI/server": ["packages/shared/RTC-UI/src/server.ts"]
+    // }
   },
   "exclude": ["node_modules", "tmp"]
 }
